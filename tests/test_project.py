@@ -260,7 +260,7 @@ def test_saved_models_were_trained_on_the_training_day_only(meta):
         assert len(imputer.statistics_) == len(columns)
 
 
-def test_models_load_and_agree_in_a_fresh_python_process(meta):
+def test_models_load_and_agree_in_a_fresh_python_process(meta, sample):
     """The 'restart the app' test: a new interpreter loads the saved files."""
     result = subprocess.run(
         [sys.executable, str(ROOT / "src" / "predict.py")],
