@@ -1,8 +1,5 @@
 # DDoS Attack Detection Using Machine Learning (CIC-DDoS2019)
 
-Student: [your name], [roll number]  
-College / course: [college and course]  
-Guide: [guide's name]
 
 A machine-learning system that classifies network-flow records as **BENIGN** or **DDoS ATTACK**, with an interactive Streamlit dashboard. Everything on the dashboard is read from files produced by the scripts in this repository, and no performance number is typed in by hand.
 
@@ -86,7 +83,6 @@ ddos-attack-detection/
         performance_data.py    Model Performance page logic
         dashboard_data.py      Helpers that read the artifact files
         make_demo_csv.py       Demo and deliberately broken CSV files
-        list_zip.py            List a zip archive without extracting it
     models/                    Saved Joblib pipelines (small)
     artifacts/                 Evaluation results (JSON/CSV) and figures
     tests/                     64 automated tests (pytest)
