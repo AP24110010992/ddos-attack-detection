@@ -1,0 +1,418 @@
+{
+  "suspicious_columns": {
+    "Source IP": {
+      "kind": "categorical",
+      "cross_day": 0.81875,
+      "random_split": 0.9732291667,
+      "unseen_in_test_day": 0.0729
+    },
+    "Destination IP": {
+      "kind": "categorical",
+      "cross_day": 0.7655,
+      "random_split": 0.9616666667,
+      "unseen_in_test_day": 0.8934
+    },
+    "Flow ID": {
+      "kind": "categorical",
+      "cross_day": 0.51075,
+      "random_split": 0.6991666667,
+      "unseen_in_test_day": 0.9957
+    },
+    "SimillarHTTP": {
+      "kind": "categorical",
+      "cross_day": 0.50525,
+      "random_split": 0.5108333333,
+      "unseen_in_test_day": 0.0039
+    },
+    "Source Port": {
+      "kind": "numeric",
+      "cross_day": 0.6824375,
+      "random_split": 0.7865625,
+      "unseen_in_test_day": null
+    },
+    "Destination Port": {
+      "kind": "numeric",
+      "cross_day": 0.8944375,
+      "random_split": 0.9094791667,
+      "unseen_in_test_day": null
+    },
+    "Inbound": {
+      "kind": "numeric",
+      "cross_day": 0.895,
+      "random_split": 0.9065625,
+      "unseen_in_test_day": null
+    },
+    "source_row_id": {
+      "kind": "numeric",
+      "cross_day": 0.520625,
+      "random_split": 0.6191666667,
+      "unseen_in_test_day": null
+    }
+  },
+  "single_feature_auc": [
+    {
+      "feature": "Flow Bytes/s",
+      "auc_train_day": 0.59826425,
+      "auc_test_day": 0.8622615312499999
+    },
+    {
+      "feature": "Flow Duration",
+      "auc_train_day": 0.86573290625,
+      "auc_test_day": 0.8493934687500001
+    },
+    {
+      "feature": "Flow IAT Max",
+      "auc_train_day": 0.86194559375,
+      "auc_test_day": 0.8447074375
+    },
+    {
+      "feature": "Flow Packets/s",
+      "auc_train_day": 0.8626258437500001,
+      "auc_test_day": 0.84447134375
+    },
+    {
+      "feature": "Flow IAT Mean",
+      "auc_train_day": 0.8534060937500001,
+      "auc_test_day": 0.83962015625
+    },
+    {
+      "feature": "Packet Length Std",
+      "auc_train_day": 0.84425,
+      "auc_test_day": 0.8301376875
+    },
+    {
+      "feature": "Packet Length Variance",
+      "auc_train_day": 0.84425,
+      "auc_test_day": 0.8301376874999999
+    },
+    {
+      "feature": "Flow IAT Std",
+      "auc_train_day": 0.86792903125,
+      "auc_test_day": 0.8168134687499999
+    },
+    {
+      "feature": "Fwd Packets/s",
+      "auc_train_day": 0.8025145,
+      "auc_test_day": 0.81174475
+    },
+    {
+      "feature": "Min Packet Length",
+      "auc_train_day": 0.6753772499999999,
+      "auc_test_day": 0.78127778125
+    },
+    {
+      "feature": "Fwd Packet Length Min",
+      "auc_train_day": 0.6373833124999999,
+      "auc_test_day": 0.7766549375
+    },
+    {
+      "feature": "Bwd Header Length",
+      "auc_train_day": 0.81490540625,
+      "auc_test_day": 0.7738836874999999
+    },
+    {
+      "feature": "Bwd IAT Total",
+      "auc_train_day": 0.82193990625,
+      "auc_test_day": 0.76889796875
+    },
+    {
+      "feature": "Bwd IAT Max",
+      "auc_train_day": 0.8217209375,
+      "auc_test_day": 0.76751771875
+    },
+    {
+      "feature": "Bwd IAT Mean",
+      "auc_train_day": 0.82157740625,
+      "auc_test_day": 0.76583240625
+    },
+    {
+      "feature": "Total Backward Packets",
+      "auc_train_day": 0.83099971875,
+      "auc_test_day": 0.7637325000000001
+    },
+    {
+      "feature": "Subflow Bwd Packets",
+      "auc_train_day": 0.83099971875,
+      "auc_test_day": 0.7637325000000001
+    },
+    {
+      "feature": "URG Flag Count",
+      "auc_train_day": 0.753375,
+      "auc_test_day": 0.7496875
+    },
+    {
+      "feature": "Bwd IAT Min",
+      "auc_train_day": 0.79923171875,
+      "auc_test_day": 0.74689671875
+    },
+    {
+      "feature": "Bwd Packet Length Max",
+      "auc_train_day": 0.72525,
+      "auc_test_day": 0.74365328125
+    },
+    {
+      "feature": "Bwd Packet Length Mean",
+      "auc_train_day": 0.72525,
+      "auc_test_day": 0.7435504687499999
+    },
+    {
+      "feature": "Avg Bwd Segment Size",
+      "auc_train_day": 0.72525,
+      "auc_test_day": 0.7435504687499999
+    },
+    {
+      "feature": "Total Length of Bwd Packets",
+      "auc_train_day": 0.72525,
+      "auc_test_day": 0.7419194375
+    },
+    {
+      "feature": "Subflow Bwd Bytes",
+      "auc_train_day": 0.72525,
+      "auc_test_day": 0.7419194375
+    },
+    {
+      "feature": "Down/Up Ratio",
+      "auc_train_day": 0.7789064375,
+      "auc_test_day": 0.7210807499999999
+    },
+    {
+      "feature": "Bwd Packets/s",
+      "auc_train_day": 0.81950628125,
+      "auc_test_day": 0.71714284375
+    },
+    {
+      "feature": "min_seg_size_forward",
+      "auc_train_day": 0.59941146875,
+      "auc_test_day": 0.6964378437500001
+    },
+    {
+      "feature": "Fwd Packet Length Std",
+      "auc_train_day": 0.622,
+      "auc_test_day": 0.6774568750000001
+    },
+    {
+      "feature": "Fwd IAT Total",
+      "auc_train_day": 0.61790346875,
+      "auc_test_day": 0.6646036875000001
+    },
+    {
+      "feature": "Fwd Header Length",
+      "auc_train_day": 0.618509875,
+      "auc_test_day": 0.663438875
+    },
+    {
+      "feature": "Fwd Header Length.1",
+      "auc_train_day": 0.618509875,
+      "auc_test_day": 0.663438875
+    },
+    {
+      "feature": "Fwd IAT Max",
+      "auc_train_day": 0.61415053125,
+      "auc_test_day": 0.6593740625
+    },
+    {
+      "feature": "Init_Win_bytes_backward",
+      "auc_train_day": 0.69987759375,
+      "auc_test_day": 0.6548012187500001
+    },
+    {
+      "feature": "Fwd IAT Mean",
+      "auc_train_day": 0.6056718125,
+      "auc_test_day": 0.6545620312499999
+    },
+    {
+      "feature": "ACK Flag Count",
+      "auc_train_day": 0.6810625,
+      "auc_test_day": 0.650625
+    },
+    {
+      "feature": "Bwd Packet Length Min",
+      "auc_train_day": 0.66275,
+      "auc_test_day": 0.6476431874999999
+    },
+    {
+      "feature": "Fwd Packet Length Mean",
+      "auc_train_day": 0.5761531875,
+      "auc_test_day": 0.63612496875
+    },
+    {
+      "feature": "Avg Fwd Segment Size",
+      "auc_train_day": 0.5761531875,
+      "auc_test_day": 0.63612496875
+    },
+    {
+      "feature": "Fwd IAT Std",
+      "auc_train_day": 0.6238705312499999,
+      "auc_test_day": 0.634203125
+    },
+    {
+      "feature": "Average Packet Size",
+      "auc_train_day": 0.5747819375,
+      "auc_test_day": 0.628226375
+    },
+    {
+      "feature": "Packet Length Mean",
+      "auc_train_day": 0.5742694999999999,
+      "auc_test_day": 0.625344875
+    },
+    {
+      "feature": "CWE Flag Count",
+      "auc_train_day": 0.5614375,
+      "auc_test_day": 0.6169374999999999
+    },
+    {
+      "feature": "Total Length of Fwd Packets",
+      "auc_train_day": 0.5600919375,
+      "auc_test_day": 0.61537815625
+    },
+    {
+      "feature": "Subflow Fwd Bytes",
+      "auc_train_day": 0.5600919375,
+      "auc_test_day": 0.61537815625
+    },
+    {
+      "feature": "Protocol",
+      "auc_train_day": 0.6201828437500001,
+      "auc_test_day": 0.61068653125
+    },
+    {
+      "feature": "Fwd Packet Length Max",
+      "auc_train_day": 0.56931890625,
+      "auc_test_day": 0.6061572187500001
+    },
+    {
+      "feature": "Bwd IAT Std",
+      "auc_train_day": 0.57249984375,
+      "auc_test_day": 0.6021716874999999
+    },
+    {
+      "feature": "Bwd Packet Length Std",
+      "auc_train_day": 0.56275,
+      "auc_test_day": 0.5924396875
+    },
+    {
+      "feature": "Fwd PSH Flags",
+      "auc_train_day": 0.5705,
+      "auc_test_day": 0.5880000000000001
+    },
+    {
+      "feature": "RST Flag Count",
+      "auc_train_day": 0.5705,
+      "auc_test_day": 0.5880000000000001
+    },
+    {
+      "feature": "Init_Win_bytes_forward",
+      "auc_train_day": 0.5772554375,
+      "auc_test_day": 0.57610996875
+    },
+    {
+      "feature": "Max Packet Length",
+      "auc_train_day": 0.540072625,
+      "auc_test_day": 0.56932265625
+    },
+    {
+      "feature": "Total Fwd Packets",
+      "auc_train_day": 0.590310875,
+      "auc_test_day": 0.56075165625
+    },
+    {
+      "feature": "Subflow Fwd Packets",
+      "auc_train_day": 0.590310875,
+      "auc_test_day": 0.56075165625
+    },
+    {
+      "feature": "SYN Flag Count",
+      "auc_train_day": 0.5019375,
+      "auc_test_day": 0.50225
+    },
+    {
+      "feature": "act_data_pkt_fwd",
+      "auc_train_day": 0.6099811875000001,
+      "auc_test_day": 0.47234028125000005
+    },
+    {
+      "feature": "Idle Std",
+      "auc_train_day": 0.515934375,
+      "auc_test_day": 0.47170625
+    },
+    {
+      "feature": "Active Std",
+      "auc_train_day": 0.5110216875,
+      "auc_test_day": 0.4659121875
+    },
+    {
+      "feature": "Idle Max",
+      "auc_train_day": 0.5032886249999999,
+      "auc_test_day": 0.45332800000000006
+    },
+    {
+      "feature": "Idle Mean",
+      "auc_train_day": 0.503276125,
+      "auc_test_day": 0.4532248750000001
+    },
+    {
+      "feature": "Idle Min",
+      "auc_train_day": 0.5032229374999999,
+      "auc_test_day": 0.4518411875000001
+    },
+    {
+      "feature": "Active Max",
+      "auc_train_day": 0.503054625,
+      "auc_test_day": 0.4503561562500001
+    },
+    {
+      "feature": "Active Mean",
+      "auc_train_day": 0.5030345,
+      "auc_test_day": 0.45024690625
+    },
+    {
+      "feature": "Active Min",
+      "auc_train_day": 0.5028795625,
+      "auc_test_day": 0.44896025000000006
+    },
+    {
+      "feature": "Fwd IAT Min",
+      "auc_train_day": 0.5304608749999999,
+      "auc_test_day": 0.44665340625000005
+    },
+    {
+      "feature": "Flow IAT Min",
+      "auc_train_day": 0.54275984375,
+      "auc_test_day": 0.32882181250000003
+    }
+  ],
+  "constant_on_train_day": [
+    "Bwd PSH Flags",
+    "Fwd URG Flags",
+    "Bwd URG Flags",
+    "FIN Flag Count",
+    "PSH Flag Count",
+    "ECE Flag Count",
+    "Fwd Avg Bytes/Bulk",
+    "Fwd Avg Packets/Bulk",
+    "Fwd Avg Bulk Rate",
+    "Bwd Avg Bytes/Bulk",
+    "Bwd Avg Packets/Bulk",
+    "Bwd Avg Bulk Rate"
+  ],
+  "duplicate_column_pairs": [
+    [
+      "Total Backward Packets",
+      "Subflow Bwd Packets"
+    ],
+    [
+      "Fwd Header Length",
+      "Fwd Header Length.1"
+    ],
+    [
+      "Fwd PSH Flags",
+      "RST Flag Count"
+    ],
+    [
+      "Total Fwd Packets",
+      "Subflow Fwd Packets"
+    ]
+  ],
+  "rate_nan_inf_rows": 1024,
+  "rate_nan_inf_with_zero_duration": 1024
+}

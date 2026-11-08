@@ -1,0 +1,84 @@
+{
+  "rows_by_class_and_day": {
+    "BENIGN": {
+      "01-12": 2000,
+      "03-11": 2000
+    },
+    "ATTACK": {
+      "01-12": 8000,
+      "03-11": 8000
+    }
+  },
+  "rows_by_type_and_day": {
+    "01-12": {
+      "BENIGN": 2000,
+      "LDAP": 4000,
+      "NetBIOS": 0,
+      "Syn": 4000
+    },
+    "03-11": {
+      "BENIGN": 2000,
+      "LDAP": 3000,
+      "NetBIOS": 1000,
+      "Syn": 4000
+    }
+  },
+  "schema_columns_with_nan_or_inf": 2,
+  "pct_rows_nan_or_inf_by_class": {
+    "Flow Bytes/s": {
+      "ATTACK": 6.0625,
+      "BENIGN": 1.35
+    },
+    "Flow Packets/s": {
+      "ATTACK": 6.0625,
+      "BENIGN": 1.35
+    }
+  },
+  "high_correlation_pairs": 82,
+  "top_label_correlations": {
+    "Packet Length Std": -0.7963476135806161,
+    "Packet Length Variance": -0.796347613520689,
+    "Flow IAT Std": -0.6803352170307654,
+    "URG Flag Count": -0.6709219848051826,
+    "Total Backward Packets": -0.6611236230917656,
+    "Bwd IAT Total": -0.6569493000110715,
+    "Bwd IAT Max": -0.6565317116828295,
+    "Bwd IAT Mean": -0.6562352957662752,
+    "Bwd Packets/s": -0.6356350943381868,
+    "Bwd Header Length": -0.634738896496372
+  },
+  "protocol_by_class": {
+    "BENIGN": {
+      "Other (0)": 180,
+      "TCP": 2653,
+      "UDP": 1167
+    },
+    "ATTACK": {
+      "Other (0)": 0,
+      "TCP": 7998,
+      "UDP": 8002
+    }
+  },
+  "protocol_by_type": {
+    "BENIGN": {
+      "Other (0)": 180,
+      "TCP": 2653,
+      "UDP": 1167
+    },
+    "LDAP": {
+      "Other (0)": 0,
+      "TCP": 0,
+      "UDP": 7000
+    },
+    "NetBIOS": {
+      "Other (0)": 0,
+      "TCP": 1,
+      "UDP": 999
+    },
+    "Syn": {
+      "Other (0)": 0,
+      "TCP": 7997,
+      "UDP": 3
+    }
+  }
+}

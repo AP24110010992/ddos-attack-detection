@@ -1,0 +1,44 @@
+{
+  "rows": 20000,
+  "columns": 92,
+  "numeric_traffic_columns": 81,
+  "class_counts": {
+    "ATTACK": 16000,
+    "BENIGN": 4000
+  },
+  "rows_by_day_and_attack_type": {
+    "01-12|BENIGN": 2000,
+    "01-12|LDAP": 4000,
+    "01-12|Syn": 4000,
+    "03-11|BENIGN": 2000,
+    "03-11|LDAP": 3000,
+    "03-11|NetBIOS": 1000,
+    "03-11|Syn": 4000
+  },
+  "constant_columns": [
+    "Bwd Avg Bulk Rate",
+    "Bwd Avg Bytes/Bulk",
+    "Bwd Avg Packets/Bulk",
+    "Bwd PSH Flags",
+    "Bwd URG Flags",
+    "ECE Flag Count",
+    "FIN Flag Count",
+    "Fwd Avg Bulk Rate",
+    "Fwd Avg Bytes/Bulk",
+    "Fwd Avg Packets/Bulk",
+    "Fwd URG Flags",
+    "PSH Flag Count"
+  ],
+  "columns_with_nan_or_inf": {
+    "Flow Bytes/s": {
+      "nan": 531,
+      "infinite": 493
+    },
+    "Flow Packets/s": {
+      "nan": 0,
+      "infinite": 1024
+    }
+  },
+  "identical_feature_rows": 155,
+  "identical_feature_label_conflicts": 0
+}

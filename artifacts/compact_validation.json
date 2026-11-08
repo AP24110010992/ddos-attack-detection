@@ -1,0 +1,186 @@
+{
+  "validation": "5-fold time-blocked, inside training day 01-12",
+  "rate_formula_check": {
+    "Flow Packets/s|microseconds": {
+      "matching": 9366,
+      "checked": 9366
+    },
+    "Flow Packets/s|milliseconds": {
+      "matching": 0,
+      "checked": 9366
+    },
+    "Flow Packets/s|seconds": {
+      "matching": 0,
+      "checked": 9366
+    },
+    "Flow Bytes/s|microseconds": {
+      "matching": 9366,
+      "checked": 9366
+    },
+    "Flow Bytes/s|milliseconds": {
+      "matching": 4067,
+      "checked": 9366
+    },
+    "Flow Bytes/s|seconds": {
+      "matching": 4067,
+      "checked": 9366
+    }
+  },
+  "schemas": {
+    "compact-7 (no SYN)": {
+      "features": [
+        "Protocol",
+        "Flow Duration",
+        "Total Packets",
+        "Total Bytes",
+        "Flow Packets/s",
+        "Flow Bytes/s",
+        "ACK Flag Count"
+      ],
+      "models": {
+        "Decision Tree (depth 4)": {
+          "accuracy": 0.9891998493249623,
+          "accuracy_std": 0.008022518883493762,
+          "precision": 0.9916579562147524,
+          "precision_std": 0.012580891616095324,
+          "recall": 0.9947780761779923,
+          "recall_std": 0.0031132322867355234,
+          "f1": 0.993156681905452,
+          "f1_std": 0.005212981561423613,
+          "fpr": 0.029120221649890792,
+          "fpr_std": 0.0422349844424728,
+          "balanced_accuracy": 0.9828289272640507,
+          "balanced_accuracy_std": 0.01985214328998933,
+          "roc_auc": 0.9964783543888329,
+          "roc_auc_std": 0.002287886915554498
+        },
+        "Decision Tree (depth 10)": {
+          "accuracy": 0.9947998496749625,
+          "accuracy_std": 0.003340716979255781,
+          "precision": 0.9953927331600882,
+          "precision_std": 0.00520509830913387,
+          "recall": 0.9980113824699309,
+          "recall_std": 0.0012234432313790366,
+          "f1": 0.9966907798936029,
+          "f1_std": 0.0022142746662262127,
+          "fpr": 0.01628397569119156,
+          "fpr_std": 0.01673093412265414,
+          "balanced_accuracy": 0.9908637033893696,
+          "balanced_accuracy_std": 0.007914847997173083,
+          "roc_auc": 0.9923920317153634,
+          "roc_auc_std": 0.008926475300606376
+        },
+        "Random Forest (200 trees)": {
+          "accuracy": 0.9955999497749873,
+          "accuracy_std": 0.0031685974113308413,
+          "precision": 0.9958902697917764,
+          "precision_std": 0.004848519384948275,
+          "recall": 0.9985121291663612,
+          "recall_std": 0.0007483525856775078,
+          "f1": 0.9971916981245557,
+          "f1_std": 0.0020945142566431416,
+          "fpr": 0.014279733949809529,
+          "fpr_std": 0.015615759152486584,
+          "balanced_accuracy": 0.9921161976082757,
+          "balanced_accuracy_std": 0.007449888965408636,
+          "roc_auc": 0.9975890256003597,
+          "roc_auc_std": 0.0018119879015911745
+        },
+        "Logistic Regression (scaled)": {
+          "accuracy": 0.9890990990997748,
+          "accuracy_std": 0.0072631115890286245,
+          "precision": 0.9908496040034234,
+          "precision_std": 0.01068055492681191,
+          "recall": 0.9955564154370856,
+          "recall_std": 0.004897371368849863,
+          "f1": 0.9931487821624154,
+          "f1_std": 0.00466814896825841,
+          "fpr": 0.03200810522237057,
+          "fpr_std": 0.03503227388999776,
+          "balanced_accuracy": 0.9817741551073575,
+          "balanced_accuracy_std": 0.016519815106376904,
+          "roc_auc": 0.9956354743207221,
+          "roc_auc_std": 0.0028214866755740986
+        }
+      }
+    },
+    "compact-8 (with SYN)": {
+      "features": [
+        "Protocol",
+        "Flow Duration",
+        "Total Packets",
+        "Total Bytes",
+        "Flow Packets/s",
+        "Flow Bytes/s",
+        "ACK Flag Count",
+        "SYN Flag Count"
+      ],
+      "models": {
+        "Decision Tree (depth 4)": {
+          "accuracy": 0.9891998493249623,
+          "accuracy_std": 0.008022518883493762,
+          "precision": 0.9916579562147524,
+          "precision_std": 0.012580891616095324,
+          "recall": 0.9947780761779923,
+          "recall_std": 0.0031132322867355234,
+          "f1": 0.993156681905452,
+          "f1_std": 0.005212981561423613,
+          "fpr": 0.029120221649890792,
+          "fpr_std": 0.0422349844424728,
+          "balanced_accuracy": 0.9828289272640507,
+          "balanced_accuracy_std": 0.01985214328998933,
+          "roc_auc": 0.9963571627892607,
+          "roc_auc_std": 0.002198302455767923
+        },
+        "Decision Tree (depth 10)": {
+          "accuracy": 0.9951997497249374,
+          "accuracy_std": 0.0035157289479761968,
+          "precision": 0.9953939479396574,
+          "precision_std": 0.005205330792237725,
+          "recall": 0.998517499109712,
+          "recall_std": 0.0009836498983130156,
+          "f1": 0.9969444094209804,
+          "f1_std": 0.002309681007662088,
+          "fpr": 0.01628397569119156,
+          "fpr_std": 0.01673093412265414,
+          "balanced_accuracy": 0.9911167617092602,
+          "balanced_accuracy_std": 0.008042196083268133,
+          "roc_auc": 0.9924503439317274,
+          "roc_auc_std": 0.0089945937445883
+        },
+        "Random Forest (200 trees)": {
+          "accuracy": 0.995499899749975,
+          "accuracy_std": 0.0031144983047394856,
+          "precision": 0.9958901281527293,
+          "precision_std": 0.0048484340920688165,
+          "recall": 0.998393223102152,
+          "recall_std": 0.000828801565108231,
+          "f1": 0.9971321212793584,
+          "f1_std": 0.002060029588913145,
+          "fpr": 0.014279733949809529,
+          "fpr_std": 0.015615759152486584,
+          "balanced_accuracy": 0.9920567445761712,
+          "balanced_accuracy_std": 0.0074201543259398185,
+          "roc_auc": 0.9976404246533548,
+          "roc_auc_std": 0.001860194807286832
+        },
+        "Logistic Regression (scaled)": {
+          "accuracy": 0.9890990990997748,
+          "accuracy_std": 0.0072631115890286245,
+          "precision": 0.9908496040034234,
+          "precision_std": 0.01068055492681191,
+          "recall": 0.9955564154370856,
+          "recall_std": 0.004897371368849863,
+          "f1": 0.9931487821624154,
+          "f1_std": 0.00466814896825841,
+          "fpr": 0.03200810522237057,
+          "fpr_std": 0.03503227388999776,
+          "balanced_accuracy": 0.9817741551073575,
+          "balanced_accuracy_std": 0.016519815106376904,
+          "roc_auc": 0.9956040026206029,
+          "roc_auc_std": 0.002806268320461449
+        }
+      }
+    }
+  }
+}

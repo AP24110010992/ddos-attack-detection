@@ -1,0 +1,457 @@
+{
+  "validation": "5-fold time-blocked, inside training day 01-12",
+  "zero_duration_rows": {
+    "benign": 31,
+    "attack": 603
+  },
+  "results": {
+    "full schema": {
+      "Decision Tree (depth 10)": {
+        "median (current)": {
+          "metrics": {
+            "accuracy": 0.9968002997000749,
+            "accuracy_std": 0.0019895530563070747,
+            "precision": 0.9974160179238177,
+            "precision_std": 0.0027997467947904154,
+            "recall": 0.9985409341638622,
+            "recall_std": 0.0017487943735870666,
+            "f1": 0.9979743389518714,
+            "f1_std": 0.0012863793471727671,
+            "fpr": 0.008882376619054576,
+            "fpr_std": 0.008827838821234618,
+            "balanced_accuracy": 0.9948292787724039,
+            "balanced_accuracy_std": 0.004115970393193616,
+            "roc_auc": 0.994878356806478,
+            "roc_auc_std": 0.00413188294881335
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 2,
+            "missed_attacks": 0
+          }
+        },
+        "zero": {
+          "metrics": {
+            "accuracy": 0.997000299700075,
+            "accuracy_std": 0.0019995503204047805,
+            "precision": 0.9976826828031864,
+            "precision_std": 0.0027784543840540256,
+            "recall": 0.9985409341638622,
+            "recall_std": 0.0017487943735870666,
+            "f1": 0.9981078497776463,
+            "f1_std": 0.0012814220419553777,
+            "fpr": 0.008091862785062482,
+            "fpr_std": 0.008879801061368868,
+            "balanced_accuracy": 0.9952245356894001,
+            "balanced_accuracy_std": 0.004149557154096865,
+            "roc_auc": 0.9952728635274853,
+            "roc_auc_std": 0.004160221332067886
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 2,
+            "missed_attacks": 0
+          }
+        },
+        "median + missing flag": {
+          "metrics": {
+            "accuracy": 0.9968002996500749,
+            "accuracy_std": 0.0020143788170528254,
+            "precision": 0.9978060296993447,
+            "precision_std": 0.0028884680516721045,
+            "recall": 0.9981791294749973,
+            "recall_std": 0.0016723562144546956,
+            "f1": 0.9979885871836096,
+            "f1_std": 0.001280059677427906,
+            "fpr": 0.007563347139370612,
+            "fpr_std": 0.009463100465968696,
+            "balanced_accuracy": 0.9953078911678134,
+            "balanced_accuracy_std": 0.004466158784048629,
+            "roc_auc": 0.9953516064087115,
+            "roc_auc_std": 0.004458615145309056
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 2,
+            "missed_attacks": 0
+          }
+        }
+      },
+      "Random Forest (200 trees)": {
+        "median (current)": {
+          "metrics": {
+            "accuracy": 0.9995001499250374,
+            "accuracy_std": 0.0005474488467748364,
+            "precision": 0.999880739415623,
+            "precision_std": 0.00023852116875371367,
+            "recall": 0.9995037596083399,
+            "recall_std": 0.00045204350525171813,
+            "f1": 0.9996921901273815,
+            "f1_std": 0.0003268227758896656,
+            "fpr": 0.0006191950464396285,
+            "fpr_std": 0.001238390092879257,
+            "balanced_accuracy": 0.9994422822809501,
+            "balanced_accuracy_std": 0.0008061397627023133,
+            "roc_auc": 0.9999266073333736,
+            "roc_auc_std": 0.00013337365940439767
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        },
+        "zero": {
+          "metrics": {
+            "accuracy": 0.999600099950025,
+            "accuracy_std": 0.00037400548114972586,
+            "precision": 1.0,
+            "precision_std": 0.0,
+            "recall": 0.9995037596083399,
+            "recall_std": 0.00045204350525171813,
+            "f1": 0.9997517670988916,
+            "f1_std": 0.00022614497403371895,
+            "fpr": 0.0,
+            "fpr_std": 0.0,
+            "balanced_accuracy": 0.99975187980417,
+            "balanced_accuracy_std": 0.00022602175262587611,
+            "roc_auc": 0.9999271923696054,
+            "roc_auc_std": 0.00013267719288665905
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        },
+        "median + missing flag": {
+          "metrics": {
+            "accuracy": 0.9995001499250374,
+            "accuracy_std": 0.0005474488467748364,
+            "precision": 0.999880739415623,
+            "precision_std": 0.00023852116875371367,
+            "recall": 0.9995037596083399,
+            "recall_std": 0.00045204350525171813,
+            "f1": 0.9996921901273815,
+            "f1_std": 0.0003268227758896656,
+            "fpr": 0.0006191950464396285,
+            "fpr_std": 0.001238390092879257,
+            "balanced_accuracy": 0.9994422822809501,
+            "balanced_accuracy_std": 0.0008061397627023133,
+            "roc_auc": 0.9999235124005275,
+            "roc_auc_std": 0.00013509510629315354
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        }
+      },
+      "Logistic Regression (scaled)": {
+        "median (current)": {
+          "metrics": {
+            "accuracy": 0.9986000998500251,
+            "accuracy_std": 0.0008600466962904646,
+            "precision": 0.9986260647530278,
+            "precision_std": 0.001048521230094609,
+            "recall": 0.9996376284169075,
+            "recall_std": 0.0004792498337878557,
+            "f1": 0.9991312275272961,
+            "f1_std": 0.0005504386368903898,
+            "fpr": 0.00567513910026859,
+            "fpr_std": 0.0034190489835258333,
+            "balanced_accuracy": 0.9969812446583195,
+            "balanced_accuracy_std": 0.0017349493599941694,
+            "roc_auc": 0.9997066131340132,
+            "roc_auc_std": 0.00021489760096994788
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        },
+        "zero": {
+          "metrics": {
+            "accuracy": 0.9986000998500251,
+            "accuracy_std": 0.0008600466962904646,
+            "precision": 0.9986260647530278,
+            "precision_std": 0.001048521230094609,
+            "recall": 0.9996376284169075,
+            "recall_std": 0.0004792498337878557,
+            "f1": 0.9991312275272961,
+            "f1_std": 0.0005504386368903898,
+            "fpr": 0.00567513910026859,
+            "fpr_std": 0.0034190489835258333,
+            "balanced_accuracy": 0.9969812446583195,
+            "balanced_accuracy_std": 0.0017349493599941694,
+            "roc_auc": 0.9998085448649914,
+            "roc_auc_std": 0.0002527449699884603
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        },
+        "median + missing flag": {
+          "metrics": {
+            "accuracy": 0.9986000998500251,
+            "accuracy_std": 0.0008600466962904646,
+            "precision": 0.9986260647530278,
+            "precision_std": 0.001048521230094609,
+            "recall": 0.9996376284169075,
+            "recall_std": 0.0004792498337878557,
+            "f1": 0.9991312275272961,
+            "f1_std": 0.0005504386368903898,
+            "fpr": 0.00567513910026859,
+            "fpr_std": 0.0034190489835258333,
+            "balanced_accuracy": 0.9969812446583195,
+            "balanced_accuracy_std": 0.0017349493599941694,
+            "roc_auc": 0.9997091611203508,
+            "roc_auc_std": 0.0002166886798216257
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        }
+      }
+    },
+    "compact schema": {
+      "Decision Tree (depth 10)": {
+        "median (current)": {
+          "metrics": {
+            "accuracy": 0.9947998496749625,
+            "accuracy_std": 0.003340716979255781,
+            "precision": 0.9953927331600882,
+            "precision_std": 0.00520509830913387,
+            "recall": 0.9980113824699309,
+            "recall_std": 0.0012234432313790366,
+            "f1": 0.9966907798936029,
+            "f1_std": 0.0022142746662262127,
+            "fpr": 0.01628397569119156,
+            "fpr_std": 0.01673093412265414,
+            "balanced_accuracy": 0.9908637033893696,
+            "balanced_accuracy_std": 0.007914847997173083,
+            "roc_auc": 0.9923920317153634,
+            "roc_auc_std": 0.008926475300606376
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        },
+        "zero": {
+          "metrics": {
+            "accuracy": 0.995099899699975,
+            "accuracy_std": 0.0033823394012569624,
+            "precision": 0.9955127113502419,
+            "precision_std": 0.005274620753221179,
+            "recall": 0.9982791200870661,
+            "recall_std": 0.001027772695677976,
+            "f1": 0.9968843710975894,
+            "f1_std": 0.002232496301488173,
+            "fpr": 0.01565306086469314,
+            "fpr_std": 0.017032978850944833,
+            "balanced_accuracy": 0.9913130296111865,
+            "balanced_accuracy_std": 0.008079721915362284,
+            "roc_auc": 0.9927640235961048,
+            "roc_auc_std": 0.009106547832251689
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        },
+        "median + missing flag": {
+          "metrics": {
+            "accuracy": 0.99499979974995,
+            "accuracy_std": 0.0034928497871222733,
+            "precision": 0.995511550902625,
+            "precision_std": 0.005274513938767226,
+            "recall": 0.9981257689321306,
+            "recall_std": 0.0012127062402430384,
+            "f1": 0.9968074548830183,
+            "f1_std": 0.002307287703514333,
+            "fpr": 0.01565306086469314,
+            "fpr_std": 0.017032978850944833,
+            "balanced_accuracy": 0.9912363540337188,
+            "balanced_accuracy_std": 0.008116911013291274,
+            "roc_auc": 0.9928821913492877,
+            "roc_auc_std": 0.009170582601356234
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        }
+      },
+      "Random Forest (200 trees)": {
+        "median (current)": {
+          "metrics": {
+            "accuracy": 0.9955999497749873,
+            "accuracy_std": 0.0031685974113308413,
+            "precision": 0.9958902697917764,
+            "precision_std": 0.004848519384948275,
+            "recall": 0.9985121291663612,
+            "recall_std": 0.0007483525856775078,
+            "f1": 0.9971916981245557,
+            "f1_std": 0.0020945142566431416,
+            "fpr": 0.014279733949809529,
+            "fpr_std": 0.015615759152486584,
+            "balanced_accuracy": 0.9921161976082757,
+            "balanced_accuracy_std": 0.007449888965408636,
+            "roc_auc": 0.9975890256003597,
+            "roc_auc_std": 0.0018119879015911745
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        },
+        "zero": {
+          "metrics": {
+            "accuracy": 0.9953998497249625,
+            "accuracy_std": 0.003072502218941065,
+            "precision": 0.995889986344964,
+            "precision_std": 0.004848348712667452,
+            "recall": 0.9982743170379427,
+            "recall_std": 0.0009627573385892336,
+            "f1": 0.9970725089823043,
+            "f1_std": 0.0020319422098306057,
+            "fpr": 0.014279733949809529,
+            "fpr_std": 0.015615759152486584,
+            "balanced_accuracy": 0.9919972915440665,
+            "balanced_accuracy_std": 0.007392212939899746,
+            "roc_auc": 0.9975863714552601,
+            "roc_auc_std": 0.001815302249267394
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        },
+        "median + missing flag": {
+          "metrics": {
+            "accuracy": 0.9953998497249625,
+            "accuracy_std": 0.003072502218941065,
+            "precision": 0.995889986344964,
+            "precision_std": 0.004848348712667452,
+            "recall": 0.9982743170379427,
+            "recall_std": 0.0009627573385892336,
+            "f1": 0.9970725089823043,
+            "f1_std": 0.0020319422098306057,
+            "fpr": 0.014279733949809529,
+            "fpr_std": 0.015615759152486584,
+            "balanced_accuracy": 0.9919972915440665,
+            "balanced_accuracy_std": 0.007392212939899746,
+            "roc_auc": 0.9977142652336051,
+            "roc_auc_std": 0.0017863115904562087
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        }
+      },
+      "Logistic Regression (scaled)": {
+        "median (current)": {
+          "metrics": {
+            "accuracy": 0.9890990990997748,
+            "accuracy_std": 0.0072631115890286245,
+            "precision": 0.9908496040034234,
+            "precision_std": 0.01068055492681191,
+            "recall": 0.9955564154370856,
+            "recall_std": 0.004897371368849863,
+            "f1": 0.9931487821624154,
+            "f1_std": 0.00466814896825841,
+            "fpr": 0.03200810522237057,
+            "fpr_std": 0.03503227388999776,
+            "balanced_accuracy": 0.9817741551073575,
+            "balanced_accuracy_std": 0.016519815106376904,
+            "roc_auc": 0.9956354743207221,
+            "roc_auc_std": 0.0028214866755740986
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 2,
+            "missed_attacks": 0
+          }
+        },
+        "zero": {
+          "metrics": {
+            "accuracy": 0.9910002496750623,
+            "accuracy_std": 0.009607353835716826,
+            "precision": 0.9898934774858859,
+            "precision_std": 0.012824725026428523,
+            "recall": 0.9987936957393998,
+            "recall_std": 0.0016483844248952233,
+            "f1": 0.9942758324507335,
+            "f1_std": 0.0061878030896651715,
+            "fpr": 0.03546723802700193,
+            "fpr_std": 0.04269513916270579,
+            "balanced_accuracy": 0.981663228856199,
+            "balanced_accuracy_std": 0.020975983664292642,
+            "roc_auc": 0.9949646905507483,
+            "roc_auc_std": 0.0031246816784735406
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 0,
+            "missed_attacks": 0
+          }
+        },
+        "median + missing flag": {
+          "metrics": {
+            "accuracy": 0.9846975983493996,
+            "accuracy_std": 0.009825732984258921,
+            "precision": 0.9907059889155659,
+            "precision_std": 0.010924729606001026,
+            "recall": 0.9903643890575736,
+            "recall_std": 0.01149758484536935,
+            "f1": 0.9904435222552624,
+            "f1_std": 0.006059434357107065,
+            "fpr": 0.03243637074699583,
+            "fpr_std": 0.03587173347352078,
+            "balanced_accuracy": 0.978964009155289,
+            "balanced_accuracy_std": 0.016569436726197376,
+            "roc_auc": 0.9956821518200106,
+            "roc_auc_std": 0.0027674130106136955
+          },
+          "zero_duration": {
+            "benign": 31,
+            "attack": 603,
+            "false_alarms": 2,
+            "missed_attacks": 0
+          }
+        }
+      }
+    }
+  }
+}

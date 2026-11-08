@@ -1,0 +1,17 @@
+# Virtual environment
+.venv/
+
+# Large or regenerable data (rebuild with the scripts in src/)
+data/raw/
+data/processed/
+
+# Python and editor clutter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+
+# Secrets (never commit)
+.env
+.streamlit/secrets.toml
+.pytest_cache/

@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "rows": 20000,
+  "columns": 92,
+  "rows_by_day_and_attack_type": {
+    "01-12|BENIGN": 2000,
+    "01-12|LDAP": 4000,
+    "01-12|Syn": 4000,
+    "03-11|BENIGN": 2000,
+    "03-11|LDAP": 3000,
+    "03-11|NetBIOS": 1000,
+    "03-11|Syn": 4000
+  }
+}
