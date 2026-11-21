@@ -15,3 +15,5 @@ __pycache__/
 .env
 .streamlit/secrets.toml
 .pytest_cache/
+
+docs/

@@ -86,7 +86,6 @@ ddos-attack-detection/
     models/                    Saved Joblib pipelines (small)
     artifacts/                 Evaluation results (JSON/CSV) and figures
     tests/                     64 automated tests (pytest)
-    docs/                      Manual test log
     data/raw/                  Official CSV files (not in Git)
     data/processed/            Sample and demo files (not in Git)
     notebooks/                 Reserved for experiments
@@ -150,7 +149,7 @@ Random seeds are fixed, and `train.py` refuses to save a model unless its test-d
 python -m pytest tests -v
 ```
 
-64 automated tests cover the preprocessing, metrics, manual-form validation, CSV handling, saved-model reproduction (including in a fresh Python process) and the consistency of the dashboard with the saved results. Some tests are skipped if the sample or artifact files have not been created. The manual checks are in `docs/manual_test_log.md`.
+64 automated tests cover the preprocessing, metrics, manual-form validation, CSV handling, saved-model reproduction (including in a fresh Python process) and the consistency of the dashboard with the saved results. Some tests are skipped if the sample or artifact files have not been created. 
 
 ## Limitations
 
